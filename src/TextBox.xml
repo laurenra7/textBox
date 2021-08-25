@@ -23,5 +23,8 @@
         <propertyGroup caption="Label">
             <systemProperty key="Label" />
         </propertyGroup>
+        <propertyGroup caption="Editability">
+            <systemProperty key="Editability"/>
+        </propertyGroup>
     </properties>
 </widget>

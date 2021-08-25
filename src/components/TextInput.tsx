@@ -8,6 +8,7 @@ export interface InputProps {
     style?: CSSProperties;
     tabIndex?: number;
     onUpdate?: (value: string) => void;
+    disabled?: boolean;
 }
 
 export class TextInput extends Component<InputProps> {
@@ -20,6 +21,7 @@ export class TextInput extends Component<InputProps> {
             style={this.props.style}
             value={this.props.value}
             onChange={this.handleChange}
+            disabled={this.props.disabled}
         />;
     }
     private onChange(event: ChangeEvent<HTMLInputElement>): void {
